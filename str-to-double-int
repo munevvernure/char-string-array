@@ -1,0 +1,18 @@
+//Program part that converts a C - type string to double / integer
+//and prints the result on the screen
+
+#include <iostream>
+#include <cctype>
+using namespace std;
+int main()
+{
+	char pi[] = "3.14";
+	unsigned int radius;
+
+	cout << "ENTER THE RADIUS: "; cin >> radius;
+	cout << "THE AREA IS: ";
+	float area = atof(pi) * radius * radius;  //atof(pi) = 3.14
+	cout << area << endl;
+	int areaa = atoi(pi) * radius * radius;  //atoi(pi) = 3
+	cout << areaa;
+}
