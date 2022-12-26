@@ -1,0 +1,19 @@
+//Program part that converts a character array to uppercase and
+//prints it on the screen
+
+#include <iostream>
+#include <cctype>  //character classification and transform functions
+#include <cstring> // for strlen() [gets the length of the string] function.
+
+using namespace std;
+int main()
+{
+	char message[] = "hello world";
+	unsigned int length = strlen(message);
+	for (int i = 0; i < length; i++)
+	{
+		if (islower(message[i]))
+			message[i] = toupper(message[i]);
+			cout << message[i];
+	}
+}
