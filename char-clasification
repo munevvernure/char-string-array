@@ -1,0 +1,31 @@
+//Program part that controls a character type and prints the
+//result on the screen
+
+#include <iostream>
+#include <cctype>
+
+using namespace std;
+
+int main()
+{
+	char ch = 'b';
+
+	cout << ch << " is: ";
+	if (isdigit(ch))
+		cout << "NUMBER \n";
+	else if (isalpha(ch))
+	{
+		cout << "ALPHABETIC \n";
+		if (islower(ch))
+			cout << "Lowercase letter.";
+		else if (isupper(ch))
+			cout << "Uppercase letter.";
+	}
+	else if (isalnum(ch))
+		cout << "Alphanumeric \n";
+	else
+		cout << "OTHER.";
+
+	
+	return 0;
+}
